@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="BackGround">#faf8fe</color>
+    <color name="title">#5f478c</color>
+    <color name="about">#9a82c7</color>
+    <color name="btn1">#fea728</color>
+    <color name="btn2">#f6aeca</color>
+    <color name="btn3">#9D7AEF</color>
+    <color name="btn4">#6cc2e3</color>
+    <color name="btn5">#FFE600</color>
+    <color name="black">#000000</color>
+</resources>

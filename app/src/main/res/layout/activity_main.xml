@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/title"
+                android:textSize="40dp"
+                android:fontFamily="@font/black"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textColor="@color/about"
+                android:textAlignment="center"
+                android:fontFamily="@font/medium"
+                android:textSize="20dp"
+                android:layout_marginTop="0dp"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="263dp"
+                android:layout_height="239dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/intro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/getuser"
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputdesign"
+                    android:ems="10"
+                    android:hint="@string/username"
+                    android:inputType="textVisiblePassword|textNoSuggestions"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:fontFamily="@font/medium"
+                    android:textColorHint="@color/about"
+                    android:textColor="@color/title"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/getpass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inputdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/medium"
+                    android:hint="@string/pass"
+                    android:textDirection="anyRtl"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/about"
+                    android:textColor="@color/title"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="در نوشتن حروف کوچک و بزرگ دقت کنید" />
+
+            <Button
+                android:id="@+id/got"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/black"
+                android:text="@string/login"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/signup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textDirection="rtl"
+                    android:fontFamily="@font/medium"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/title"
+                    android:text="ثبت نام"
+                    />
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="حساب کاربری ندارید؟"
+                    android:fontFamily="@font/medium"
+                    android:textColor="@color/about"
+                    android:textDirection="ltr"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

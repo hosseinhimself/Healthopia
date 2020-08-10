@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround"
+    tools:context=".physical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="220dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/water"
+                        android:textAlignment="center"
+                        android:textColor="@color/title"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/menha"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button3"
+                        android:text="@string/minus"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/wnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/add"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button3"
+                        android:text="@string/plus"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/wwarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:textDirection="rtl"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                 android:text="نوشیدن روزانه 7 تا 8 لیوان آب باعث بهبود عملکرد بدن می شود."
+                    android:textColor="@color/title"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:textDirection="rtl"
+                        android:textSize="20sp"
+                        android:textColor="@color/title"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heighttitle" />
+
+                    <EditText
+                        android:id="@+id/qad"
+                        android:background="@drawable/inputdesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/height"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:textDirection="rtl"
+                        android:textSize="20sp"
+                        android:textColor="@color/title"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weight" />
+
+                    <EditText
+                        android:id="@+id/vazn"
+                        android:background="@drawable/inputdesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="@string/ww"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"/>
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/bmi"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:textColor="#ffffff"
+                    android:text="@string/bmi" />
+
+                <Button
+                    android:id="@+id/food"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="@string/food"
+                    android:background="@drawable/button3"/>
+
+                <Button
+                    android:id="@+id/sport"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button4"
+                    android:layout_width="match_parent"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sport" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mental"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/backph"
+            android:layout_width="51dp"
+            android:layout_height="53dp"
+            app:srcCompat="@drawable/ic_action_back_white"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/physical"
+            android:textColor="#ffffff"
+            android:textDirection="rtl"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

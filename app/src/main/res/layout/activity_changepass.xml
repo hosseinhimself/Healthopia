@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changepass">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pro" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/pr" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="523dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="تغییر رمز عبور" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/currentpass"
+                android:layout_width="273dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputdesign"
+                android:ems="10"
+                android:fontFamily="@font/medium"
+                android:hint="@string/crnt"
+                android:inputType="textPassword"
+                android:textDirection="anyRtl"
+                android:gravity="right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/title"
+                android:textColorHint="@color/about" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/newpass"
+                android:layout_width="198dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputdesign"
+                android:ems="10"
+                android:fontFamily="@font/medium"
+                android:hint="@string/nwpass"
+                android:inputType="textPassword"
+                android:textDirection="anyRtl"
+                android:gravity="right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/title"
+                android:textColorHint="@color/about" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/confirm"
+                android:layout_width="198dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/inputdesign"
+                android:ems="10"
+                android:fontFamily="@font/medium"
+                android:hint="@string/cnfrm"
+                android:inputType="textPassword"
+                android:textDirection="anyRtl"
+                android:gravity="right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/title"
+                android:textColorHint="@color/about" />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/acpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/candb"
+            android:fontFamily="@font/bold"
+            android:background="@drawable/button3"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backk"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_action_back_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
