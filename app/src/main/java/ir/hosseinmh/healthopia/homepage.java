@@ -104,7 +104,7 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(homepage.this);
-                builder.setMessage("اپلیکیشن خودمراقبتی (Healthopia)\nحسین محسنی - 39713161061")
+                builder.setMessage("اپلیکیشن خودمراقبتی (Healthopia)")
                         .setCancelable(false)
                         .setNeutralButton("بازگشت", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
